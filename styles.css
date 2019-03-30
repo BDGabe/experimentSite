@@ -1,1 +1,285 @@
+/********************************************
+                Global Styles               
+********************************************/
+html {
+    box-sizing: border-box;
+    cursor: default;
+}
 
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/********************************************
+                Navigation               
+********************************************/
+nav a {
+    display: inline-block;
+    padding: 30px;
+    /*color: #E4DFDA;*/
+    color: #ffe175;
+    font-family: "Montserrat", sans-serif;
+    font-size: 2.0vw;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    /*background-color: #9E5458;*/
+    /*background-color: #d83c4c;*/
+    background-color: #bf3543;
+}
+
+
+/********************************************
+    Header Styles (Name and Description)
+********************************************/
+.content-header {
+    padding-top: 20vh;
+    height: 100vh;
+}
+
+img {
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 22vw;
+    height: auto;
+}
+
+header h1, header h2 {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 5.75vw;
+    /*font-size: 5.75vh;*/
+    margin-bottom: 0;
+}
+
+header h2 {
+    font-size: 1.5vw;
+    /*font-size: 1.5vh;*/
+}
+
+/********************************************
+      Body Styles (About Me and Skills)            
+********************************************/
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    /*background-color: #4b4bbc;*/
+    background-color: #4848a5;
+    /*background-color: #34617C; For browsers that don't support a gradient/*
+    /*background: linear-gradient(#0D2B3C, #5E99BD);
+    /*color: #E4DFDA;*/
+    color: #ffe175;
+    font-family: "Montserrat", sans-serif;
+}
+
+main, footer {
+    padding: 15px;
+}
+
+#current-button, #developing-button {
+    background-color: #07161E;
+    display: inline-block;
+    margin: 0;
+    padding: 10px;
+}
+
+    #current-button:hover {
+        cursor: pointer;
+    }
+
+    #developing-button:hover {
+        cursor: pointer;
+    }
+
+.hidden {
+    display: none;
+}
+
+li {
+    display: none;
+    padding: 15px;
+    margin: 3px;
+    border: 2px solid #E4DFDA;
+}
+
+footer {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+main section:nth-child(2) p {
+    margin-bottom: 0;
+    padding-left: 5vw
+}
+
+main h1:nth-last-of-type(1) {
+    text-align: center;
+}
+
+main h2:nth-last-of-type(1) {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+main {
+    /*padding-bottom: 0;*/
+    background: #d8d8d8;
+    height: 100%;
+    margin: 0;
+    color: #3f3d3b;
+}
+
+    main section:nth-child(1) p {
+        margin: 15px;
+    }
+
+    main h1 {
+        font-size: 2.25em
+    }
+
+#about {
+    text-align: center;
+}
+
+main h1:nth-child(3) {
+    text-align: center;
+}
+
+.skills {
+    text-align: right;
+    padding: 15px 0;
+    margin: 5px 0;
+    border-radius: 500px 500px 500px 500px;
+    width: 0%;
+    background: #4b4bbc;
+    font-weight: bold;
+}
+
+    .skills:after {
+        content: "%";
+        padding-right: 25px;
+    }
+
+    /*.skills needs this invisible character so that it can be moved to the right
+  by adding padding to the left*/
+    .skills:before {
+        content: ".";
+        font-size: 0;
+        color: transparent;
+        padding-left: 15px;
+    }
+
+.skillBar {
+    width: 90%;
+    margin: 0 auto;
+    background: #cccccc;
+    border-radius: 500px;
+}
+
+    .skillBar:nth-of-type(3) {
+        margin-bottom: 20px;
+    }
+
+section {
+    border: 2px solid #afafaf;
+    background-color: #efefef;
+    /*background-color: white;*/
+    margin: 5px;
+}
+
+    section:nth-child(3) {
+        padding: 16vh 0;
+    }
+
+/********************************************
+         Footer Styles (Contact me)             
+********************************************/
+
+/*footer h2{
+    text-align: center;
+    padding-top: 150px;
+    font-size: 5em;
+}*/
+
+/* footer a{
+    text-align: center;
+    display: inline;
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    color:#e28e93;
+    color: red;
+} */
+
+footer {
+    height: 100vh;
+    text-align: center;
+    padding: 25vh 0;
+}
+
+    footer div {
+        border: 2px solid #afafaf;
+        background-color: #efefef;
+        margin: 0 auto;
+        /*    width: 400px;
+    height: 200px;*/
+        width: 250px;
+    }
+
+        footer div h2, footer div h3, footer div p, footer div a {
+            color: #3f3d3b;
+        }
+
+    footer img {
+        width: 140px;
+        padding: 15px;
+    }
+/********************************************
+                Media Queries             
+********************************************/
+@media only screen and (max-width: 750px) {
+
+    nav a {
+        font-size: 4.25vw;
+    }
+
+    .content-header h1 {
+        font-size: 3em;
+    }
+
+    .content-header h2 {
+        font-size: 1.25em;
+    }
+
+    main, footer {
+        font-size: 0.85em;
+    }
+
+    img {
+        width: 200px;
+        ;
+    }
+
+    footer div {
+        height: 415px;
+    }
+
+        footer div p {
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+
+    header div {
+        padding-top: 100px;
+    }
+}
